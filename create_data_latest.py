@@ -44,9 +44,9 @@ def create_dstIDDesc_data(dataset, data_dir, args):
     #creat dataset with descriptions with slot ID without slots name
 
     #original SGD schema but with IDs
-    #schema_path= "C:/Users/g201906730/Desktop/ConvLab-3/convlab/base_models/t5/ontologyIDs.json"
+    #schema_path= "SGD/ontologyIDs.json"
     #ontology for multiwoz21
-    schema_path= "C:/Users/g201906730/Desktop/ConvLab-3/data/unified_datasets/multiwoz21/data/data/ontologyIDs.json"
+    schema_path= "multiwoz21/ontologyIDs.json"
     schema =json.load(open(schema_path))
     #schema=load_ontology(dataset)
 
