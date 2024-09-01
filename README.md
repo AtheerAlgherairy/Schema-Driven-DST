@@ -36,6 +36,9 @@ python create_data_latest.py.py --tasks dstNameDesc --datasets sgd --speaker use
 python create_data_latest.py.py --tasks dstNameDesc --datasets mwoz --speaker user --context_window_size 50
 ```
 **Scenario 4: Prompting with Slot IDs and Descriptions**
+
+Adjust the URL for ontologyIDs.json (available in this repository for the SGD and MultiWOZ datasets).
+
 ```bash
 python create_data_latest.py.py --tasks dstIDDesc --datasets sgd --speaker user --context_window_size 50
 python create_data_latest.py.py --tasks dstIDDesc --datasets mwoz --speaker user --context_window_size 50
