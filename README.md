@@ -13,13 +13,17 @@ To replicate the experiments from the paper "The Effect of Different Schema-Driv
 
 1. Fork the following repository: [Convlab-3](https://github.com/ConvLab/ConvLab-3) (Many thanks to all contributors).
 2. For more details on Convlab-3, refer to the [paper](https://aclanthology.org/2023.emnlp-demo.9/).
-3. After forking Convlab-3, add `create_data_latest.py` to the `convlab/base_models/t5` directory.
+3. After forking Convlab-3:
+   a. add `create_data_latest.py` to the `convlab/base_models/t5` directory.
+   b. add `dst_metric_v2.py` and `merge_predict_res_v2.py` to the `convlab/base_models/t5/dst` directory.
 
 ## Create Datasets for Different Scenarios
 
-To prepare datasets for different scenarios in the Schema Guided Dialogue (SGD) dataset and the MultiWOZ dataset, use the following commands:
+To prepare different scenarios for the Schema Guided Dialogue (SGD) dataset and the MultiWOZ dataset:
+Navigate to the convlab/base_models/t5 folder. Run the followings:
 
 **Scenario 1: No Prompting**
+(using create_data.py the original code in Convlab-3)
 ```bash
 python create_data.py --tasks dst --datasets sgd --speaker user --context_window_size 50
 python create_data.py --tasks dst --datasets mwoz --speaker user --context_window_size 50
@@ -45,7 +49,7 @@ python create_data_latest.py.py --tasks dstIDDesc --datasets mwoz --speaker user
 ```
 ## T5 Training for DST
 1. Navigate to the convlab/base_models/t5 folder.
-3. Run run_seq2seq.py for training, specifying the URL of your dataset (train and validation files) and the name of model (model_name_or_path t5-small or t5-base):
+2. Run run_seq2seq.py for training, specifying the URL of your dataset (train and validation files) and the name of model (model_name_or_path t5-small or t5-base):
 
 ```bash
 python run_seq2seq.py \
@@ -85,6 +89,7 @@ python run_seq2seq.py \
 
 1. Navigate to the convlab/base_models/t5 folder.
 2. Run run_seq2seq.py for evaluation, specifying the URL of your dataset (test file) and the model output from the previous step:
+3. *Note:* When experimenting with IDs, use dst_metric_v2.py instead of dst_metric.py and merge_predict_res_v2.py instead of merge_predict_res.py. These updated scripts reverse the slot IDs back to names using ontologyID.json.
    
 ```bash
 python run_seq2seq.py \
