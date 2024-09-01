@@ -7,37 +7,43 @@
           "description": "The account type of the user",
           "is_categorical": true,
           "possible_values": [
-            "checking",
-            "savings"
-          ]
+            "1a: checking",
+            "1b: savings"
+          ],
+          "slot_ID": 1
         },
         "recipient_account_type": {
           "description": "The account type of the recipient whom the user is transfering money to",
           "is_categorical": true,
           "possible_values": [
-            "checking",
-            "savings"
-          ]
+            "2a: checking",
+            "2b: savings"
+          ],
+          "slot_ID": 2
         },
         "balance": {
           "description": "The amount of money held in a bank account at a given time",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 3
         },
         "amount": {
           "description": "The amount of money to transfer",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 4
         },
         "recipient_account_name": {
           "description": "The account name of the recipient who is to receive the transfered money",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 5
         },
         "count": {
           "description": "the number of items found that satisfy the user's request.",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 6
         }
       },
       "active_intents": [
@@ -81,61 +87,71 @@
         "from_location": {
           "description": "City where bus is leaving from",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 1
         },
         "to_location": {
           "description": "City where bus is going to",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 2
         },
         "from_station": {
           "description": "Station where bus is leaving from",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 3
         },
         "to_station": {
           "description": "Station where bus is going to",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 4
         },
         "leaving_date": {
           "description": "Date of bus leaving for journey",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 5
         },
         "leaving_time": {
           "description": "Time of bus leaving for journey",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 6
         },
         "fare": {
           "description": "Fare per ticket for journey",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 7
         },
         "travelers": {
           "description": "Number of travelers for journey",
           "is_categorical": true,
           "possible_values": [
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"
-          ]
+            "8a: 1",
+            "8b: 2",
+            "8c: 3",
+            "8d: 4",
+            "8e: 5"
+          ],
+          "slot_ID": 8
         },
         "transfers": {
           "description": "Number of transfers in journey",
           "is_categorical": true,
           "possible_values": [
-            "0",
-            "1"
-          ]
+            "9a: 0",
+            "9b: 1"
+          ],
+          "slot_ID": 9
         },
         "count": {
           "description": "the number of items found that satisfy the user's request.",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 10
         }
       },
       "active_intents": [
@@ -195,62 +211,72 @@
         "origin": {
           "description": "Origin city for journey",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 1
         },
         "destination": {
           "description": "Destination city for journey",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 2
         },
         "origin_station_name": {
           "description": "Name of the bus terminus at the origin",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 3
         },
         "destination_station_name": {
           "description": "Name of the bus terminus at the destination",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 4
         },
         "departure_date": {
           "description": "Date of bus departure",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 5
         },
         "price": {
           "description": "Price per ticket of the itinerary",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 6
         },
         "departure_time": {
           "description": "Time of bus departure",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 7
         },
         "group_size": {
           "description": "Size of group for the booking",
           "is_categorical": true,
           "possible_values": [
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"
-          ]
+            "8a: 1",
+            "8b: 2",
+            "8c: 3",
+            "8d: 4",
+            "8e: 5"
+          ],
+          "slot_ID": 8
         },
         "fare_type": {
           "description": "Type of fare for the booking",
           "is_categorical": true,
           "possible_values": [
-            "Economy",
-            "Economy extra",
-            "Flexible"
-          ]
+            "9a: Economy",
+            "9b: Economy extra",
+            "9c: Flexible"
+          ],
+          "slot_ID": 9
         },
         "count": {
           "description": "the number of items found that satisfy the user's request.",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 10
         }
       },
       "active_intents": [
@@ -313,37 +339,44 @@
         "event_date": {
           "description": "Date of event or for checking availability",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 1
         },
         "event_time": {
           "description": "Start time of event",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 2
         },
         "event_location": {
           "description": "Location of event",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 3
         },
         "event_name": {
           "description": "Title of event",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 4
         },
         "available_start_time": {
           "description": "Starting time of available time slot",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 5
         },
         "available_end_time": {
           "description": "Ending time of available time slot",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 6
         },
         "count": {
           "description": "the number of items found that satisfy the user's request.",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 7
         }
       },
       "active_intents": [
@@ -403,64 +436,74 @@
           "description": "Type of event",
           "is_categorical": true,
           "possible_values": [
-            "Music",
-            "Sports"
-          ]
+            "1a: Music",
+            "1b: Sports"
+          ],
+          "slot_ID": 1
         },
         "subcategory": {
           "description": "Subcategory of event, either a music genre or sport name",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 2
         },
         "event_name": {
           "description": "Name of event",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 3
         },
         "date": {
           "description": "Date of occurrence of event",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 4
         },
         "time": {
           "description": "Time when the event is scheduled to start",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 5
         },
         "number_of_seats": {
           "description": "Number of seats to find event tickets for",
           "is_categorical": true,
           "possible_values": [
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9"
-          ]
+            "6a: 1",
+            "6b: 2",
+            "6c: 3",
+            "6d: 4",
+            "6e: 5",
+            "6f: 6",
+            "6g: 7",
+            "6h: 8",
+            "6i: 9"
+          ],
+          "slot_ID": 6
         },
         "city_of_event": {
           "description": "City where event is happening",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 7
         },
         "event_location": {
           "description": "Name of event location",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 8
         },
         "address_of_location": {
           "description": "Street address of event location",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 9
         },
         "count": {
           "description": "the number of items found that satisfy the user's request.",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 10
         }
       },
       "active_intents": [
@@ -517,64 +560,74 @@
           "description": "Type of event",
           "is_categorical": true,
           "possible_values": [
-            "Music",
-            "Sports"
-          ]
+            "1a: Music",
+            "1b: Sports"
+          ],
+          "slot_ID": 1
         },
         "category": {
           "description": "The sport or music subcategory",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 2
         },
         "event_name": {
           "description": "Name of match or artist for event",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 3
         },
         "date": {
           "description": "Date of event",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 4
         },
         "time": {
           "description": "Starting time for event",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 5
         },
         "number_of_tickets": {
           "description": "Number of tickets to buy for event",
           "is_categorical": true,
           "possible_values": [
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9"
-          ]
+            "6a: 1",
+            "6b: 2",
+            "6c: 3",
+            "6d: 4",
+            "6e: 5",
+            "6f: 6",
+            "6g: 7",
+            "6h: 8",
+            "6i: 9"
+          ],
+          "slot_ID": 6
         },
         "city": {
           "description": "City where the event is taking place",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 7
         },
         "venue": {
           "description": "Exact venue of event",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 8
         },
         "venue_address": {
           "description": "Address of event venue",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 9
         },
         "count": {
           "description": "the number of items found that satisfy the user's request.",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 10
         }
       },
       "active_intents": [
@@ -649,111 +702,128 @@
           "description": "Number of passengers in the booking",
           "is_categorical": true,
           "possible_values": [
-            "1",
-            "2",
-            "3",
-            "4"
-          ]
+            "1a: 1",
+            "1b: 2",
+            "1c: 3",
+            "1d: 4"
+          ],
+          "slot_ID": 1
         },
         "seating_class": {
           "description": "Seating class for the booking",
           "is_categorical": true,
           "possible_values": [
-            "Economy",
-            "Premium Economy",
-            "Business",
-            "First Class"
-          ]
+            "2a: Economy",
+            "2b: Premium Economy",
+            "2c: Business",
+            "2d: First Class"
+          ],
+          "slot_ID": 2
         },
         "origin_city": {
           "description": "Starting city for the trip",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 3
         },
         "destination_city": {
           "description": "Ending city for the trip",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 4
         },
         "origin_airport": {
           "description": "Airport at the starting city for the trip",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 5
         },
         "destination_airport": {
           "description": "Airport at the ending city for the trip",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 6
         },
         "departure_date": {
           "description": "Start date for the trip",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 7
         },
         "return_date": {
           "description": "Date of the return flight",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 8
         },
         "number_stops": {
           "description": "Number of layovers in the flight",
           "is_categorical": true,
           "possible_values": [
-            "0",
-            "1"
-          ]
+            "9a: 0",
+            "9b: 1"
+          ],
+          "slot_ID": 9
         },
         "outbound_departure_time": {
           "description": "Departure time for the outbound leg flight",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 10
         },
         "outbound_arrival_time": {
           "description": "Arrival time for the outbound leg flight",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 11
         },
         "inbound_arrival_time": {
           "description": "Arrival time for the return leg flight",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 12
         },
         "inbound_departure_time": {
           "description": "Departure time for the return leg flight",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 13
         },
         "price": {
           "description": "Price of the booking per passenger",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 14
         },
         "refundable": {
           "description": "Whether the booking is refundable or not",
           "is_categorical": true,
           "possible_values": [
-            "True",
-            "False"
-          ]
+            "15a: True",
+            "15b: False"
+          ],
+          "slot_ID": 15
         },
         "airlines": {
           "description": "Name of airline",
           "is_categorical": true,
           "possible_values": [
-            "United Airlines",
-            "American Airlines",
-            "Delta Airlines",
-            "Southwest Airlines",
-            "Alaska Airlines",
-            "British Airways",
-            "Air Canada",
-            "Air France"
-          ]
+            "16a: United Airlines",
+            "16b: American Airlines",
+            "16c: Delta Airlines",
+            "16d: Southwest Airlines",
+            "16e: Alaska Airlines",
+            "16f: British Airways",
+            "16g: Air Canada",
+            "16h: Air France"
+          ],
+          "slot_ID": 16
         },
         "count": {
           "description": "the number of items found that satisfy the user's request.",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 17
         }
       },
       "active_intents": [
@@ -900,112 +970,129 @@
           "description": "Number of passengers to book tickets for",
           "is_categorical": true,
           "possible_values": [
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"
-          ]
+            "1a: 1",
+            "1b: 2",
+            "1c: 3",
+            "1d: 4",
+            "1e: 5"
+          ],
+          "slot_ID": 1
         },
         "seating_class": {
           "description": "Seating class for the flight tickets",
           "is_categorical": true,
           "possible_values": [
-            "Economy",
-            "Premium Economy",
-            "Business",
-            "First Class"
-          ]
+            "2a: Economy",
+            "2b: Premium Economy",
+            "2c: Business",
+            "2d: First Class"
+          ],
+          "slot_ID": 2
         },
         "origin": {
           "description": "City of origin for the flight",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 3
         },
         "destination": {
           "description": "City of destination for the flight",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 4
         },
         "origin_airport": {
           "description": "Airport where the flight is departing from",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 5
         },
         "destination_airport": {
           "description": "Airport where the flight is arriving to",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 6
         },
         "departure_date": {
           "description": "Date of departure flight on the ticket",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 7
         },
         "return_date": {
           "description": "Date of return flight on the ticket",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 8
         },
         "number_stops": {
           "description": "Number of stopovers made by the flight",
           "is_categorical": true,
           "possible_values": [
-            "0",
-            "1"
-          ]
+            "9a: 0",
+            "9b: 1"
+          ],
+          "slot_ID": 9
         },
         "outbound_departure_time": {
           "description": "Departure time of the origin-destination flight",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 10
         },
         "outbound_arrival_time": {
           "description": "Arrival time of the origin-destination flight",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 11
         },
         "inbound_arrival_time": {
           "description": "Arrival time of the destination-origin flight",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 12
         },
         "inbound_departure_time": {
           "description": "Departure time of the destination-origin flight",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 13
         },
         "fare": {
           "description": "Ticket fare for each passenger",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 14
         },
         "is_redeye": {
           "description": "Boolean flag indicating whether the flight is a red-eye flight",
           "is_categorical": true,
           "possible_values": [
-            "True",
-            "False"
-          ]
+            "15a: True",
+            "15b: False"
+          ],
+          "slot_ID": 15
         },
         "airlines": {
           "description": "Name of the airline to book with",
           "is_categorical": true,
           "possible_values": [
-            "United Airlines",
-            "American Airlines",
-            "Delta Airlines",
-            "Southwest Airlines",
-            "Alaska Airlines",
-            "British Airways",
-            "Air Canada",
-            "Air France"
-          ]
+            "16a: United Airlines",
+            "16b: American Airlines",
+            "16c: Delta Airlines",
+            "16d: Southwest Airlines",
+            "16e: Alaska Airlines",
+            "16f: British Airways",
+            "16g: Air Canada",
+            "16h: Air France"
+          ],
+          "slot_ID": 16
         },
         "count": {
           "description": "the number of items found that satisfy the user's request.",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 17
         }
       },
       "active_intents": [
@@ -1081,73 +1168,84 @@
         "area": {
           "description": "City where the apartment is located",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 1
         },
         "address": {
           "description": "Address of the apartment",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 2
         },
         "property_name": {
           "description": "Name of the apartment",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 3
         },
         "phone_number": {
           "description": "Phone number of the apartment",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 4
         },
         "furnished": {
           "description": "Boolean flag indicating if the property is furnished",
           "is_categorical": true,
           "possible_values": [
-            "True",
-            "False"
-          ]
+            "5a: True",
+            "5b: False"
+          ],
+          "slot_ID": 5
         },
         "pets_allowed": {
           "description": "Boolean flag indicating if pets are allowed",
           "is_categorical": true,
           "possible_values": [
-            "True",
-            "False"
-          ]
+            "6a: True",
+            "6b: False"
+          ],
+          "slot_ID": 6
         },
         "rent": {
           "description": "Rent per month of the apartment",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 7
         },
         "visit_date": {
           "description": "Date for the visit to the apartment",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 8
         },
         "number_of_beds": {
           "description": "Number of bed rooms",
           "is_categorical": true,
           "possible_values": [
-            "1",
-            "2",
-            "3",
-            "4"
-          ]
+            "9a: 1",
+            "9b: 2",
+            "9c: 3",
+            "9d: 4"
+          ],
+          "slot_ID": 9
         },
         "number_of_baths": {
           "description": "Number of baths in the apartment",
           "is_categorical": true,
           "possible_values": [
-            "1",
-            "2",
-            "3",
-            "4"
-          ]
+            "10a: 1",
+            "10b: 2",
+            "10c: 3",
+            "10d: 4"
+          ],
+          "slot_ID": 10
         },
         "count": {
           "description": "the number of items found that satisfy the user's request.",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 11
         }
       },
       "active_intents": [
@@ -1205,70 +1303,81 @@
         "destination": {
           "description": "Location of the hotel",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 1
         },
         "number_of_rooms": {
           "description": "Number of rooms in the reservation",
           "is_categorical": true,
           "possible_values": [
-            "1",
-            "2",
-            "3"
-          ]
+            "2a: 1",
+            "2b: 2",
+            "2c: 3"
+          ],
+          "slot_ID": 2
         },
         "check_in_date": {
           "description": "Start date for the reservation",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 3
         },
         "number_of_days": {
           "description": "Number of days in the reservation",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 4
         },
         "star_rating": {
           "description": "Star rating of the hotel",
           "is_categorical": true,
           "possible_values": [
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"
-          ]
+            "5a: 1",
+            "5b: 2",
+            "5c: 3",
+            "5d: 4",
+            "5e: 5"
+          ],
+          "slot_ID": 5
         },
         "hotel_name": {
           "description": "Name of the hotel",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 6
         },
         "street_address": {
           "description": "Address of the hotel",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 7
         },
         "phone_number": {
           "description": "Phone number of the hotel",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 8
         },
         "price_per_night": {
           "description": "Price per night for the reservation",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 9
         },
         "has_wifi": {
           "description": "Boolean flag indicating if the hotel has wifi",
           "is_categorical": true,
           "possible_values": [
-            "True",
-            "False"
-          ]
+            "10a: True",
+            "10b: False"
+          ],
+          "slot_ID": 10
         },
         "count": {
           "description": "the number of items found that satisfy the user's request.",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 11
         }
       },
       "active_intents": [
@@ -1329,61 +1438,71 @@
         "where_to": {
           "description": "Location of the house",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 1
         },
         "number_of_adults": {
           "description": "Number of people for the reservation",
           "is_categorical": true,
           "possible_values": [
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"
-          ]
+            "2a: 1",
+            "2b: 2",
+            "2c: 3",
+            "2d: 4",
+            "2e: 5"
+          ],
+          "slot_ID": 2
         },
         "check_in_date": {
           "description": "Start date for the reservation or to find the house",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 3
         },
         "check_out_date": {
           "description": "End date for the reservation or to find the house",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 4
         },
         "rating": {
           "description": "Review rating of the house",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 5
         },
         "address": {
           "description": "Address of the house",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 6
         },
         "phone_number": {
           "description": "Phone number of the house",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 7
         },
         "total_price": {
           "description": "Price per night of the house",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 8
         },
         "has_laundry_service": {
           "description": "Boolean flag indicating if the house has laundry service",
           "is_categorical": true,
           "possible_values": [
-            "True",
-            "False"
-          ]
+            "9a: True",
+            "9b: False"
+          ],
+          "slot_ID": 9
         },
         "count": {
           "description": "the number of items found that satisfy the user's request.",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 10
         }
       },
       "active_intents": [
@@ -1440,64 +1559,75 @@
         "location": {
           "description": "Location of the hotel",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 1
         },
         "number_of_rooms": {
           "description": "Number of rooms to book",
           "is_categorical": true,
           "possible_values": [
-            "1",
-            "2",
-            "3"
-          ]
+            "2a: 1",
+            "2b: 2",
+            "2c: 3"
+          ],
+          "slot_ID": 2
         },
         "check_in_date": {
           "description": "Start date for the hotel reservation",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 3
         },
         "check_out_date": {
           "description": "End date for the hotel reservation",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 4
         },
         "average_rating": {
           "description": "Average review rating for the hotel",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 5
         },
         "hotel_name": {
           "description": "Name of the hotel",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 6
         },
         "street_address": {
           "description": "Address of the hotel",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 7
         },
         "phone_number": {
           "description": "Phone number of the hotel",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 8
         },
         "price": {
           "description": "Total price for the stay",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 9
         },
         "pets_welcome": {
           "description": "Boolean flag indicating if pets are allowed in the hotel",
           "is_categorical": true,
           "possible_values": [
-            "True",
-            "False"
-          ]
+            "10a: True",
+            "10b: False"
+          ],
+          "slot_ID": 10
         },
         "count": {
           "description": "the number of items found that satisfy the user's request.",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 11
         }
       },
       "active_intents": [
@@ -1557,30 +1687,35 @@
         "title": {
           "description": "Title of the movie",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 1
         },
         "genre": {
           "description": "Genre of the movie",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 2
         },
         "subtitles": {
           "description": "Boolean flag indicating if subtitles are desired for this movie",
           "is_categorical": true,
           "possible_values": [
-            "True",
-            "False"
-          ]
+            "3a: True",
+            "3b: False"
+          ],
+          "slot_ID": 3
         },
         "directed_by": {
           "description": "Name of the director of the movie",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 4
         },
         "count": {
           "description": "the number of items found that satisfy the user's request.",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 5
         }
       },
       "active_intents": [
@@ -1626,71 +1761,82 @@
         "price": {
           "description": "Price per ticket",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 1
         },
         "number_of_tickets": {
           "description": "Number of the movie tickets to be purchased",
           "is_categorical": true,
           "possible_values": [
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9"
-          ]
+            "2a: 1",
+            "2b: 2",
+            "2c: 3",
+            "2d: 4",
+            "2e: 5",
+            "2f: 6",
+            "2g: 7",
+            "2h: 8",
+            "2i: 9"
+          ],
+          "slot_ID": 2
         },
         "show_type": {
           "description": "Type of show",
           "is_categorical": true,
           "possible_values": [
-            "regular",
-            "3d",
-            "imax"
-          ]
+            "3a: regular",
+            "3b: 3d",
+            "3c: imax"
+          ],
+          "slot_ID": 3
         },
         "theater_name": {
           "description": "Name of the theatre",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 4
         },
         "show_time": {
           "description": "Time of the show",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 5
         },
         "show_date": {
           "description": "Date of the show",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 6
         },
         "genre": {
           "description": "Genre of the movie",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 7
         },
         "street_address": {
           "description": "Address of the theatre",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 8
         },
         "location": {
           "description": "City where the theatre is located",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 9
         },
         "movie_name": {
           "description": "Name of the movie",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 10
         },
         "count": {
           "description": "the number of items found that satisfy the user's request.",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 11
         }
       },
       "active_intents": [
@@ -1775,52 +1921,59 @@
         "song_name": {
           "description": "Name of the song",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 1
         },
         "artist": {
           "description": "Artist who performed the song",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 2
         },
         "album": {
           "description": "Album the song belongs to",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 3
         },
         "genre": {
           "description": "Genre of the song",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 4
         },
         "year": {
           "description": "Year in which the song was released",
           "is_categorical": true,
           "possible_values": [
-            "2010",
-            "2011",
-            "2012",
-            "2013",
-            "2014",
-            "2015",
-            "2016",
-            "2017",
-            "2018",
-            "2019"
-          ]
+            "5a: 2010",
+            "5b: 2011",
+            "5c: 2012",
+            "5d: 2013",
+            "5e: 2014",
+            "5f: 2015",
+            "5g: 2016",
+            "5h: 2017",
+            "5i: 2018",
+            "5j: 2019"
+          ],
+          "slot_ID": 5
         },
         "playback_device": {
           "description": "Playback device on which the song is to be played",
           "is_categorical": true,
           "possible_values": [
-            "TV",
-            "Kitchen speaker",
-            "Bedroom speaker"
-          ]
+            "6a: TV",
+            "6b: Kitchen speaker",
+            "6c: Bedroom speaker"
+          ],
+          "slot_ID": 6
         },
         "count": {
           "description": "the number of items found that satisfy the user's request.",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 7
         }
       },
       "active_intents": [
@@ -1871,36 +2024,42 @@
         "song_name": {
           "description": "Name of the song",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 1
         },
         "artist": {
           "description": "Name of the artist the song is performed by",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 2
         },
         "album": {
           "description": "Album the song belongs to",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 3
         },
         "genre": {
           "description": "Genre of the song",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 4
         },
         "playback_device": {
           "description": "Playback device on which the song is to be played",
           "is_categorical": true,
           "possible_values": [
-            "TV",
-            "kitchen speaker",
-            "bedroom speaker"
-          ]
+            "5a: TV",
+            "5b: kitchen speaker",
+            "5c: bedroom speaker"
+          ],
+          "slot_ID": 5
         },
         "count": {
           "description": "the number of items found that satisfy the user's request.",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 6
         }
       },
       "active_intents": [
@@ -1949,50 +2108,59 @@
           "description": "Category to which rental car belongs",
           "is_categorical": true,
           "possible_values": [
-            "Compact",
-            "Standard",
-            "Full-size"
-          ]
+            "1a: Compact",
+            "1b: Standard",
+            "1c: Full-size"
+          ],
+          "slot_ID": 1
         },
         "car_name": {
           "description": "Model name of rental car",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 2
         },
         "pickup_location": {
           "description": "Location of rental car pickup",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 3
         },
         "pickup_date": {
           "description": "Date of rental car pickup",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 4
         },
         "pickup_time": {
           "description": "Time of rental car pickup",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 5
         },
         "pickup_city": {
           "description": "City to pick up the rental car",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 6
         },
         "dropoff_date": {
           "description": "Date of rental car drop-off",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 7
         },
         "total_price": {
           "description": "Total price of car rental",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 8
         },
         "count": {
           "description": "the number of items found that satisfy the user's request.",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 9
         }
       },
       "active_intents": [
@@ -2051,50 +2219,59 @@
           "description": "Type of car for rental",
           "is_categorical": true,
           "possible_values": [
-            "Compact",
-            "Standard",
-            "Full-size"
-          ]
+            "1a: Compact",
+            "1b: Standard",
+            "1c: Full-size"
+          ],
+          "slot_ID": 1
         },
         "car_name": {
           "description": "Name of car model",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 2
         },
         "pickup_location": {
           "description": "Pickup location for car rental",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 3
         },
         "pickup_date": {
           "description": "Date of pickup for car rental",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 4
         },
         "pickup_time": {
           "description": "Time of pickup for car rental",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 5
         },
         "pickup_city": {
           "description": "City in which to pick up rental car",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 6
         },
         "dropoff_date": {
           "description": "End date of car rental reservation",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 7
         },
         "total_price": {
           "description": "Total price of rental reservation",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 8
         },
         "count": {
           "description": "the number of items found that satisfy the user's request.",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 9
         }
       },
       "active_intents": [
@@ -2152,70 +2329,80 @@
         "restaurant_name": {
           "description": "Name of the restaurant",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 1
         },
         "date": {
           "description": "Date for the reservation or to find availability",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 2
         },
         "time": {
           "description": "Time for the reservation or to find availability",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 3
         },
         "serves_alcohol": {
           "description": "Boolean flag indicating if the restaurant serves alcohol",
           "is_categorical": true,
           "possible_values": [
-            "True",
-            "False"
-          ]
+            "4a: True",
+            "4b: False"
+          ],
+          "slot_ID": 4
         },
         "has_live_music": {
           "description": "Boolean flag indicating if the restaurant has live music",
           "is_categorical": true,
           "possible_values": [
-            "True",
-            "False"
-          ]
+            "5a: True",
+            "5b: False"
+          ],
+          "slot_ID": 5
         },
         "phone_number": {
           "description": "Phone number of the restaurant",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 6
         },
         "street_address": {
           "description": "Address of the restaurant",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 7
         },
         "party_size": {
           "description": "Party size for a reservation",
           "is_categorical": true,
           "possible_values": [
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6"
-          ]
+            "8a: 1",
+            "8b: 2",
+            "8c: 3",
+            "8d: 4",
+            "8e: 5",
+            "8f: 6"
+          ],
+          "slot_ID": 8
         },
         "price_range": {
           "description": "Price range for the restaurant",
           "is_categorical": true,
           "possible_values": [
-            "inexpensive",
-            "moderate",
-            "expensive",
-            "very expensive"
-          ]
+            "9a: inexpensive",
+            "9b: moderate",
+            "9c: expensive",
+            "9d: very expensive"
+          ],
+          "slot_ID": 9
         },
         "city": {
           "description": "City in which the restaurant is located",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 10
         },
         "cuisine": {
           "description": "Cuisine of food served in the restaurant",
@@ -2226,12 +2413,14 @@
             "Indian",
             "American",
             "Italian"
-          ]
+          ],
+          "slot_ID": 11
         },
         "count": {
           "description": "the number of items found that satisfy the user's request.",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 12
         }
       },
       "active_intents": [
@@ -2294,40 +2483,46 @@
         "destination": {
           "description": "Destination for taxi ride",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 1
         },
         "shared_ride": {
           "description": "Boolean flag whether ride is shared with other passengers",
           "is_categorical": true,
           "possible_values": [
-            "True",
-            "False"
-          ]
+            "2a: True",
+            "2b: False"
+          ],
+          "slot_ID": 2
         },
         "ride_fare": {
           "description": "Total fare for taxi ride",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 3
         },
         "approximate_ride_duration": {
           "description": "Approximate duration of ride to the destination",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 4
         },
         "number_of_riders": {
           "description": "Number of riders to call taxi for",
           "is_categorical": true,
           "possible_values": [
-            "1",
-            "2",
-            "3",
-            "4"
-          ]
+            "5a: 1",
+            "5b: 2",
+            "5c: 3",
+            "5d: 4"
+          ],
+          "slot_ID": 5
         },
         "count": {
           "description": "the number of items found that satisfy the user's request.",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 6
         }
       },
       "active_intents": [
@@ -2357,41 +2552,47 @@
         "destination": {
           "description": "Destination address or location for cab",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 1
         },
         "ride_type": {
           "description": "Type of cab ride",
           "is_categorical": true,
           "possible_values": [
-            "Pool",
-            "Regular",
-            "Luxury"
-          ]
+            "2a: Pool",
+            "2b: Regular",
+            "2c: Luxury"
+          ],
+          "slot_ID": 2
         },
         "ride_fare": {
           "description": "Total fare for cab ride",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 3
         },
         "wait_time": {
           "description": "Expected waiting time for pick-up by cab",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 4
         },
         "number_of_seats": {
           "description": "Number of seats to reserve in the cab",
           "is_categorical": true,
           "possible_values": [
-            "1",
-            "2",
-            "3",
-            "4"
-          ]
+            "5a: 1",
+            "5b: 2",
+            "5c: 3",
+            "5d: 4"
+          ],
+          "slot_ID": 5
         },
         "count": {
           "description": "the number of items found that satisfy the user's request.",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 6
         }
       },
       "active_intents": [
@@ -2421,50 +2622,59 @@
         "stylist_name": {
           "description": "Name of the hair stylist/salon",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 1
         },
         "phone_number": {
           "description": "Phone number of the stylist/salon",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 2
         },
         "average_rating": {
           "description": "Average review rating for the stylist/salon",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 3
         },
         "is_unisex": {
           "description": "Boolean flag indicating if the salon is unisex",
           "is_categorical": true,
           "possible_values": [
-            "True",
-            "False"
-          ]
+            "4a: True",
+            "4b: False"
+          ],
+          "slot_ID": 4
         },
         "street_address": {
           "description": "Address of the stylist/salon",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 5
         },
         "city": {
           "description": "City where the salon is located",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 6
         },
         "appointment_date": {
           "description": "Date for the appointment",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 7
         },
         "appointment_time": {
           "description": "Time of the appointment",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 8
         },
         "count": {
           "description": "the number of items found that satisfy the user's request.",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 9
         }
       },
       "active_intents": [
@@ -2515,45 +2725,53 @@
         "dentist_name": {
           "description": "Name of the dentist",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 1
         },
         "phone_number": {
           "description": "Phone number of the dentist",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 2
         },
         "address": {
           "description": "Address of the dentist",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 3
         },
         "city": {
           "description": "City where the dentist is located",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 4
         },
         "appointment_date": {
           "description": "Date for the appointment",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 5
         },
         "appointment_time": {
           "description": "Time for the appointment",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 6
         },
         "offers_cosmetic_services": {
           "description": "Boolean flag indicating if the dentist offers cosmetic services",
           "is_categorical": true,
           "possible_values": [
-            "True",
-            "False"
-          ]
+            "7a: True",
+            "7b: False"
+          ],
+          "slot_ID": 7
         },
         "count": {
           "description": "the number of items found that satisfy the user's request.",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 8
         }
       },
       "active_intents": [
@@ -2602,53 +2820,62 @@
         "doctor_name": {
           "description": "Name of the doctor or the medical practice",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 1
         },
         "phone_number": {
           "description": "Contact number for the doctor or the medical practice",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 2
         },
         "average_rating": {
           "description": "Average review rating of the doctor",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 3
         },
         "street_address": {
           "description": "Address of the doctor",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 4
         },
         "city": {
           "description": "City where the doctor is located",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 5
         },
         "appointment_date": {
           "description": "Date for scheduling the appointment with the doctor",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 6
         },
         "appointment_time": {
           "description": "Time for the appointment with the doctor",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 7
         },
         "type": {
           "description": "Speciality of the doctor",
           "is_categorical": true,
           "possible_values": [
-            "Gynecologist",
-            "ENT Specialist",
-            "Ophthalmologist",
-            "General Practitioner",
-            "Dermatologist"
-          ]
+            "8a: Gynecologist",
+            "8b: ENT Specialist",
+            "8c: Ophthalmologist",
+            "8d: General Practitioner",
+            "8e: Dermatologist"
+          ],
+          "slot_ID": 8
         },
         "count": {
           "description": "the number of items found that satisfy the user's request.",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 9
         }
       },
       "active_intents": [
@@ -2698,54 +2925,61 @@
         "location": {
           "description": "City or town where the attraction is located",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 1
         },
         "attraction_name": {
           "description": "Common name of the attraction",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 2
         },
         "category": {
           "description": "Category to which the attraction belongs",
           "is_categorical": true,
           "possible_values": [
-            "Place of Worship",
-            "Theme Park",
-            "Museum",
-            "Historical Landmark",
-            "Park",
-            "Tourist Attraction",
-            "Sports Venue",
-            "Shopping Area",
-            "Performing Arts Venue",
-            "Nature Preserve"
-          ]
+            "3a: Place of Worship",
+            "3b: Theme Park",
+            "3c: Museum",
+            "3d: Historical Landmark",
+            "3e: Park",
+            "3f: Tourist Attraction",
+            "3g: Sports Venue",
+            "3h: Shopping Area",
+            "3i: Performing Arts Venue",
+            "3j: Nature Preserve"
+          ],
+          "slot_ID": 3
         },
         "phone_number": {
           "description": "Phone number to contact the attraction",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 4
         },
         "free_entry": {
           "description": "Boolean flag indicating whether entrance to attraction is free",
           "is_categorical": true,
           "possible_values": [
-            "True",
-            "False"
-          ]
+            "5a: True",
+            "5b: False"
+          ],
+          "slot_ID": 5
         },
         "good_for_kids": {
           "description": "Boolean flag indicating whether attraction is good for to take kids to",
           "is_categorical": true,
           "possible_values": [
-            "True",
-            "False"
-          ]
+            "6a: True",
+            "6b: False"
+          ],
+          "slot_ID": 6
         },
         "count": {
           "description": "the number of items found that satisfy the user's request.",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 7
         }
       },
       "active_intents": [
@@ -2778,37 +3012,44 @@
         "precipitation": {
           "description": "The possibility of rain or snow in percentage",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 1
         },
         "humidity": {
           "description": "Percentage humidity",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 2
         },
         "wind": {
           "description": "Wind speed in miles per hour",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 3
         },
         "temperature": {
           "description": "Temperature in Fahrenheit",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 4
         },
         "city": {
           "description": "Name of the city",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 5
         },
         "date": {
           "description": "Date for the weather",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 6
         },
         "count": {
           "description": "the number of items found that satisfy the user's request.",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 7
         }
       },
       "active_intents": [
@@ -2839,27 +3080,32 @@
         "alarm_time": {
           "description": "Time of the alarm",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 1
         },
         "alarm_name": {
           "description": "Name of the alarm",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 2
         },
         "new_alarm_time": {
           "description": "Time to set for the new alarm",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 3
         },
         "new_alarm_name": {
           "description": "Name to use for the new alarm",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 4
         },
         "count": {
           "description": "the number of items found that satisfy the user's request.",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 5
         }
       },
       "active_intents": [
@@ -2898,42 +3144,49 @@
           "description": "The user's account type",
           "is_categorical": true,
           "possible_values": [
-            "checking",
-            "savings"
-          ]
+            "1a: checking",
+            "1b: savings"
+          ],
+          "slot_ID": 1
         },
         "recipient_account_type": {
           "description": "The account type of the recipient to transfer the money to",
           "is_categorical": true,
           "possible_values": [
-            "checking",
-            "savings"
-          ]
+            "2a: checking",
+            "2b: savings"
+          ],
+          "slot_ID": 2
         },
         "account_balance": {
           "description": "The balance in the specified account",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 3
         },
         "transfer_amount": {
           "description": "The amount of money to transfer",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 4
         },
         "recipient_name": {
           "description": "The name of the recipient to transfer the money to",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 5
         },
         "transfer_time": {
           "description": "Number of days for the transfer to go through",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 6
         },
         "count": {
           "description": "the number of items found that satisfy the user's request.",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 7
         }
       },
       "active_intents": [
@@ -2979,120 +3232,138 @@
           "description": "Number of passengers to find flight seats for",
           "is_categorical": true,
           "possible_values": [
-            "1",
-            "2",
-            "3",
-            "4"
-          ]
+            "1a: 1",
+            "1b: 2",
+            "1c: 3",
+            "1d: 4"
+          ],
+          "slot_ID": 1
         },
         "flight_class": {
           "description": "Fare class of flight booking",
           "is_categorical": true,
           "possible_values": [
-            "Economy",
-            "Premium Economy",
-            "Business",
-            "First Class"
-          ]
+            "2a: Economy",
+            "2b: Premium Economy",
+            "2c: Business",
+            "2d: First Class"
+          ],
+          "slot_ID": 2
         },
         "origin_city": {
           "description": "City in which the journey originates",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 3
         },
         "destination_city": {
           "description": "City in which the journey ends",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 4
         },
         "origin_airport_name": {
           "description": "Number of the airport flying out from",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 5
         },
         "destination_airport_name": {
           "description": "Number of the airport flying to",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 6
         },
         "departure_date": {
           "description": "Date of departure flight",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 7
         },
         "return_date": {
           "description": "Date of return flight",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 8
         },
         "number_stops": {
           "description": "Number of stops in the itinerary",
           "is_categorical": true,
           "possible_values": [
-            "0",
-            "1"
-          ]
+            "9a: 0",
+            "9b: 1"
+          ],
+          "slot_ID": 9
         },
         "outbound_departure_time": {
           "description": "Local time of departure of flight from origin to destination",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 10
         },
         "outbound_arrival_time": {
           "description": "Local time of arrival of flight from origin to destination",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 11
         },
         "inbound_arrival_time": {
           "description": "Local time of arrival of flight from destination to origin",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 12
         },
         "inbound_departure_time": {
           "description": "Local time of departure of flight from destination to origin",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 13
         },
         "price": {
           "description": "Price per passenger of the itinerary",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 14
         },
         "number_checked_bags": {
           "description": "Number of bags to check in",
           "is_categorical": true,
           "possible_values": [
-            "0",
-            "1",
-            "2"
-          ]
+            "15a: 0",
+            "15b: 1",
+            "15c: 2"
+          ],
+          "slot_ID": 15
         },
         "airlines": {
           "description": "Name of airline operating the flight",
           "is_categorical": true,
           "possible_values": [
-            "United Airlines",
-            "American Airlines",
-            "Delta Airlines",
-            "Southwest Airlines",
-            "Alaska Airlines",
-            "British Airways",
-            "Air Canada",
-            "Air France"
-          ]
+            "16a: United Airlines",
+            "16b: American Airlines",
+            "16c: Delta Airlines",
+            "16d: Southwest Airlines",
+            "16e: Alaska Airlines",
+            "16f: British Airways",
+            "16g: Air Canada",
+            "16h: Air France"
+          ],
+          "slot_ID": 16
         },
         "arrives_next_day": {
           "description": "Whether the flight arrives the next day",
           "is_categorical": true,
           "possible_values": [
-            "True",
-            "False"
-          ]
+            "17a: True",
+            "17b: False"
+          ],
+          "slot_ID": 17
         },
         "count": {
           "description": "the number of items found that satisfy the user's request.",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 18
         }
       },
       "active_intents": [
@@ -3172,70 +3443,81 @@
         "location": {
           "description": "City or town where the accommodation is located",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 1
         },
         "number_of_rooms": {
           "description": "Number of rooms to reserve",
           "is_categorical": true,
           "possible_values": [
-            "1",
-            "2",
-            "3"
-          ]
+            "2a: 1",
+            "2b: 2",
+            "2c: 3"
+          ],
+          "slot_ID": 2
         },
         "check_in_date": {
           "description": "Check in date for reservation",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 3
         },
         "stay_length": {
           "description": "Length of stay in days",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 4
         },
         "star_rating": {
           "description": "Star rating of the accommodation",
           "is_categorical": true,
           "possible_values": [
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"
-          ]
+            "5a: 1",
+            "5b: 2",
+            "5c: 3",
+            "5d: 4",
+            "5e: 5"
+          ],
+          "slot_ID": 5
         },
         "place_name": {
           "description": "Name of the accommodation",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 6
         },
         "street_address": {
           "description": "Street address of the accommodation",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 7
         },
         "phone_number": {
           "description": "Contact phone number of the accommodation",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 8
         },
         "price_per_night": {
           "description": "Price per night for the stay",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 9
         },
         "smoking_allowed": {
           "description": "Whether or not smoking is allowed inside the place",
           "is_categorical": true,
           "possible_values": [
-            "True",
-            "False"
-          ]
+            "10a: True",
+            "10b: False"
+          ],
+          "slot_ID": 10
         },
         "count": {
           "description": "the number of items found that satisfy the user's request.",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 11
         }
       },
       "active_intents": [
@@ -3296,42 +3578,49 @@
         "movie_name": {
           "description": "Name of the movie",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 1
         },
         "genre": {
           "description": "Main genre of the movie",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 2
         },
         "subtitle_language": {
           "description": "Language to use for subtitles (or None for no subtitles)",
           "is_categorical": true,
           "possible_values": [
-            "None",
-            "English",
-            "Mandarin",
-            "Spanish"
-          ]
+            "3a: None",
+            "3b: English",
+            "3c: Mandarin",
+            "3d: Spanish"
+          ],
+          "slot_ID": 3
         },
         "director": {
           "description": "Name of the director of the movie",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 4
         },
         "actors": {
           "description": "Name of an actor starring in the movie",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 5
         },
         "price": {
           "description": "Cost of renting movie",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 6
         },
         "count": {
           "description": "the number of items found that satisfy the user's request.",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 7
         }
       },
       "active_intents": [
@@ -3382,32 +3671,38 @@
         "title": {
           "description": "Title for movie",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 1
         },
         "genre": {
           "description": "Genre of the movie",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 2
         },
         "aggregate_rating": {
           "description": "Aggregate user rating for movie, scale of 10",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 3
         },
         "starring": {
           "description": "Name of actor starring in movie",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 4
         },
         "director": {
           "description": "Name of director of the movie",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 5
         },
         "count": {
           "description": "the number of items found that satisfy the user's request.",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 6
         }
       },
       "active_intents": [
@@ -3437,85 +3732,98 @@
         "restaurant_name": {
           "description": "Name of the restaurant",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 1
         },
         "date": {
           "description": "Tentative date of restaurant reservation",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 2
         },
         "time": {
           "description": "Tentative time of restaurant reservation",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 3
         },
         "has_seating_outdoors": {
           "description": "Whether the restaurant has outdoor seating available",
           "is_categorical": true,
           "possible_values": [
-            "True",
-            "False"
-          ]
+            "4a: True",
+            "4b: False"
+          ],
+          "slot_ID": 4
         },
         "has_vegetarian_options": {
           "description": "Whether the restaurant has adequate vegetarian options",
           "is_categorical": true,
           "possible_values": [
-            "True",
-            "False"
-          ]
+            "5a: True",
+            "5b: False"
+          ],
+          "slot_ID": 5
         },
         "phone_number": {
           "description": "Phone number to contact restaurant",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 6
         },
         "rating": {
           "description": "Average user rating for restaurant on a scale of 5",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 7
         },
         "address": {
           "description": "Address of restaurant",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 8
         },
         "number_of_seats": {
           "description": "Number of seats to reserve at the restaurant",
           "is_categorical": true,
           "possible_values": [
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6"
-          ]
+            "9a: 1",
+            "9b: 2",
+            "9c: 3",
+            "9d: 4",
+            "9e: 5",
+            "9f: 6"
+          ],
+          "slot_ID": 9
         },
         "price_range": {
           "description": "Price range for the restaurant",
           "is_categorical": true,
           "possible_values": [
-            "cheap",
-            "moderate",
-            "pricey",
-            "ultra high-end"
-          ]
+            "10a: cheap",
+            "10b: moderate",
+            "10c: pricey",
+            "10d: ultra high-end"
+          ],
+          "slot_ID": 10
         },
         "location": {
           "description": "City where the restaurant is located",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 11
         },
         "category": {
           "description": "The category of food offered by the restaurant",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 12
         },
         "count": {
           "description": "the number of items found that satisfy the user's request.",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 13
         }
       },
       "active_intents": [
@@ -3580,46 +3888,54 @@
         "therapist_name": {
           "description": "Name of the therapist",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 1
         },
         "phone_number": {
           "description": "Contact number of the therapist",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 2
         },
         "address": {
           "description": "Address of the therapist",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 3
         },
         "city": {
           "description": "Area where user wants to search for a therapist",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 4
         },
         "appointment_date": {
           "description": "Date of the appointment",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 5
         },
         "appointment_time": {
           "description": "Time of the appointment",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 6
         },
         "type": {
           "description": "Type of the therapist",
           "is_categorical": true,
           "possible_values": [
-            "Psychologist",
-            "Family Counselor",
-            "Psychiatrist"
-          ]
+            "7a: Psychologist",
+            "7b: Family Counselor",
+            "7c: Psychiatrist"
+          ],
+          "slot_ID": 7
         },
         "count": {
           "description": "the number of items found that satisfy the user's request.",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 8
         }
       },
       "active_intents": [
@@ -3666,69 +3982,80 @@
         "from_city": {
           "description": "The city to depart from",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 1
         },
         "to_city": {
           "description": "The destination city of the trip",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 2
         },
         "from_station": {
           "description": "Name of station of departure",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 3
         },
         "to_station": {
           "description": "Name of station of arrival",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 4
         },
         "departure_date": {
           "description": "The date of departure",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 5
         },
         "departure_time": {
           "description": "The time of departure",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 6
         },
         "price": {
           "description": "Ticket price per passenger",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 7
         },
         "additional_luggage": {
           "description": "Whether to carry excess baggage in the bus",
           "is_categorical": true,
           "possible_values": [
-            "True",
-            "False"
-          ]
+            "8a: True",
+            "8b: False"
+          ],
+          "slot_ID": 8
         },
         "num_passengers": {
           "description": "The number of tickets for the trip",
           "is_categorical": true,
           "possible_values": [
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"
-          ]
+            "9a: 1",
+            "9b: 2",
+            "9c: 3",
+            "9d: 4",
+            "9e: 5"
+          ],
+          "slot_ID": 9
         },
         "category": {
           "description": "How many stops the route has",
           "is_categorical": true,
           "possible_values": [
-            "direct",
-            "one-stop"
-          ]
+            "10a: direct",
+            "10b: one-stop"
+          ],
+          "slot_ID": 10
         },
         "count": {
           "description": "the number of items found that satisfy the user's request.",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 11
         }
       },
       "active_intents": [
@@ -3793,64 +4120,74 @@
           "description": "Type of cultural event",
           "is_categorical": true,
           "possible_values": [
-            "Music",
-            "Theater"
-          ]
+            "1a: Music",
+            "1b: Theater"
+          ],
+          "slot_ID": 1
         },
         "event_name": {
           "description": "Name of artist or play",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 2
         },
         "date": {
           "description": "Date of event",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 3
         },
         "time": {
           "description": "Start time of event",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 4
         },
         "number_of_tickets": {
           "description": "Number of tickets to reserve for the event",
           "is_categorical": true,
           "possible_values": [
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9"
-          ]
+            "5a: 1",
+            "5b: 2",
+            "5c: 3",
+            "5d: 4",
+            "5e: 5",
+            "5f: 6",
+            "5g: 7",
+            "5h: 8",
+            "5i: 9"
+          ],
+          "slot_ID": 5
         },
         "price_per_ticket": {
           "description": "Price of each ticket",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 6
         },
         "city": {
           "description": "City where the event is taking place",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 7
         },
         "venue": {
           "description": "Exact venue of event",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 8
         },
         "venue_address": {
           "description": "Street address of event venue",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 9
         },
         "count": {
           "description": "the number of items found that satisfy the user's request.",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 10
         }
       },
       "active_intents": [
@@ -3907,95 +4244,109 @@
           "description": "the number of flight tickets for the trip",
           "is_categorical": true,
           "possible_values": [
-            "1",
-            "2",
-            "3",
-            "4"
-          ]
+            "1a: 1",
+            "1b: 2",
+            "1c: 3",
+            "1d: 4"
+          ],
+          "slot_ID": 1
         },
         "seating_class": {
           "description": "The cabin seat option",
           "is_categorical": true,
           "possible_values": [
-            "Economy",
-            "Premium Economy",
-            "Business"
-          ]
+            "2a: Economy",
+            "2b: Premium Economy",
+            "2c: Business"
+          ],
+          "slot_ID": 2
         },
         "origin_airport": {
           "description": "The name of the airport or city to depart from",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 3
         },
         "destination_airport": {
           "description": "The name of the airport or city to arrive at",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 4
         },
         "departure_date": {
           "description": "Start date of the trip",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 5
         },
         "return_date": {
           "description": "End date of the trip",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 6
         },
         "is_nonstop": {
           "description": "Whether the flight is a direct one",
           "is_categorical": true,
           "possible_values": [
-            "True",
-            "False"
-          ]
+            "7a: True",
+            "7b: False"
+          ],
+          "slot_ID": 7
         },
         "outbound_departure_time": {
           "description": "Departure time of the flight flying to the destination",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 8
         },
         "outbound_arrival_time": {
           "description": "Arrival time of the flight flying to the destination",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 9
         },
         "inbound_arrival_time": {
           "description": "Arrival time of the flight coming back from the trip",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 10
         },
         "inbound_departure_time": {
           "description": "Departure time of the flight coming back from the trip",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 11
         },
         "price": {
           "description": "The total cost of the flight tickets",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 12
         },
         "airlines": {
           "description": "The company that provides air transport services",
           "is_categorical": true,
           "possible_values": [
-            "United Airlines",
-            "American Airlines",
-            "Delta Airlines",
-            "Southwest Airlines",
-            "Alaska Airlines",
-            "British Airways",
-            "Air Canada",
-            "Air France",
-            "South African Airways",
-            "LOT Polish Airlines",
-            "LATAM Brasil"
-          ]
+            "13a: United Airlines",
+            "13b: American Airlines",
+            "13c: Delta Airlines",
+            "13d: Southwest Airlines",
+            "13e: Alaska Airlines",
+            "13f: British Airways",
+            "13g: Air Canada",
+            "13h: Air France",
+            "13i: South African Airways",
+            "13j: LOT Polish Airlines",
+            "13k: LATAM Brasil"
+          ],
+          "slot_ID": 13
         },
         "count": {
           "description": "the number of items found that satisfy the user's request.",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 14
         }
       },
       "active_intents": [
@@ -4066,80 +4417,92 @@
           "description": "Whether to buy or rent a property",
           "is_categorical": true,
           "possible_values": [
-            "rent",
-            "buy"
-          ]
+            "1a: rent",
+            "1b: buy"
+          ],
+          "slot_ID": 1
         },
         "area": {
           "description": "City where the property is located",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 2
         },
         "address": {
           "description": "Street address of property",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 3
         },
         "property_name": {
           "description": "Name of property or apartment complex",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 4
         },
         "phone_number": {
           "description": "Contact number of property or apartment complex",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 5
         },
         "has_garage": {
           "description": "Whether the property has a garage",
           "is_categorical": true,
           "possible_values": [
-            "True",
-            "False"
-          ]
+            "6a: True",
+            "6b: False"
+          ],
+          "slot_ID": 6
         },
         "in_unit_laundry": {
           "description": "Whether the property has in-unit laundry facilities",
           "is_categorical": true,
           "possible_values": [
-            "True",
-            "False"
-          ]
+            "7a: True",
+            "7b: False"
+          ],
+          "slot_ID": 7
         },
         "price": {
           "description": "Sale price or per-month rent of property",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 8
         },
         "visit_date": {
           "description": "Date for visit to the property",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 9
         },
         "number_of_beds": {
           "description": "Number of bedrooms in the property",
           "is_categorical": true,
           "possible_values": [
-            "1",
-            "2",
-            "3",
-            "4"
-          ]
+            "10a: 1",
+            "10b: 2",
+            "10c: 3",
+            "10d: 4"
+          ],
+          "slot_ID": 10
         },
         "number_of_baths": {
           "description": "Number of bathroom in the property",
           "is_categorical": true,
           "possible_values": [
-            "1",
-            "2",
-            "3",
-            "4"
-          ]
+            "11a: 1",
+            "11b: 2",
+            "11c: 3",
+            "11d: 4"
+          ],
+          "slot_ID": 11
         },
         "count": {
           "description": "the number of items found that satisfy the user's request.",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 12
         }
       },
       "active_intents": [
@@ -4199,32 +4562,37 @@
         "title": {
           "description": "Title of the movie",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 1
         },
         "genre": {
           "description": "Category of the content",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 2
         },
         "subtitle_language": {
           "description": "Language of the subtitles",
           "is_categorical": true,
           "possible_values": [
-            "English",
-            "Spanish",
-            "Hindi",
-            "French"
-          ]
+            "3a: English",
+            "3b: Spanish",
+            "3c: Hindi",
+            "3d: French"
+          ],
+          "slot_ID": 3
         },
         "starring": {
           "description": "Celebs acting in the movie",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 4
         },
         "count": {
           "description": "the number of items found that satisfy the user's request.",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 5
         }
       },
       "active_intents": [
@@ -4270,17 +4638,20 @@
         "location": {
           "description": "Location to share with contact",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 1
         },
         "contact_name": {
           "description": "Name of contact to send to",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 2
         },
         "count": {
           "description": "the number of items found that satisfy the user's request.",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 3
         }
       },
       "active_intents": [
@@ -4306,32 +4677,38 @@
         "movie_title": {
           "description": "Name of the movie",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 1
         },
         "genre": {
           "description": "Type of the movie",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 2
         },
         "percent_rating": {
           "description": "Average critic percentage rating",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 3
         },
         "cast": {
           "description": "Actors in the movie",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 4
         },
         "directed_by": {
           "description": "Director of the movie",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 5
         },
         "count": {
           "description": "the number of items found that satisfy the user's request.",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 6
         }
       },
       "active_intents": [
@@ -4361,52 +4738,59 @@
         "track": {
           "description": "Name of the song",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 1
         },
         "artist": {
           "description": "Performer's name",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 2
         },
         "album": {
           "description": "Collection of the song",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 3
         },
         "genre": {
           "description": "Type of the music",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 4
         },
         "year": {
           "description": "Year when the song was first released",
           "is_categorical": true,
           "possible_values": [
-            "2010",
-            "2011",
-            "2012",
-            "2013",
-            "2014",
-            "2015",
-            "2016",
-            "2017",
-            "2018",
-            "2019"
-          ]
+            "5a: 2010",
+            "5b: 2011",
+            "5c: 2012",
+            "5d: 2013",
+            "5e: 2014",
+            "5f: 2015",
+            "5g: 2016",
+            "5h: 2017",
+            "5i: 2018",
+            "5j: 2019"
+          ],
+          "slot_ID": 5
         },
         "device": {
           "description": "Place or name of the media player to play the song selected",
           "is_categorical": true,
           "possible_values": [
-            "Living room",
-            "Kitchen",
-            "Patio"
-          ]
+            "6a: Living room",
+            "6b: Kitchen",
+            "6c: Patio"
+          ],
+          "slot_ID": 6
         },
         "count": {
           "description": "the number of items found that satisfy the user's request.",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 7
         }
       },
       "active_intents": [
@@ -4459,33 +4843,38 @@
           "description": "The source of money used for making the payment",
           "is_categorical": true,
           "possible_values": [
-            "app balance",
-            "debit card",
-            "credit card"
-          ]
+            "1a: app balance",
+            "1b: debit card",
+            "1c: credit card"
+          ],
+          "slot_ID": 1
         },
         "amount": {
           "description": "The amount of money to send or request",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 2
         },
         "receiver": {
           "description": "Name of the contact or account to make the transaction with",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 3
         },
         "private_visibility": {
           "description": "Whether the transaction is private or not",
           "is_categorical": true,
           "possible_values": [
-            "True",
-            "False"
-          ]
+            "4a: True",
+            "4b: False"
+          ],
+          "slot_ID": 4
         },
         "count": {
           "description": "the number of items found that satisfy the user's request.",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 5
         }
       },
       "active_intents": [
@@ -4534,58 +4923,68 @@
           "description": "Type of the car",
           "is_categorical": true,
           "possible_values": [
-            "Hatchback",
-            "Sedan",
-            "SUV"
-          ]
+            "1a: Hatchback",
+            "1b: Sedan",
+            "1c: SUV"
+          ],
+          "slot_ID": 1
         },
         "car_name": {
           "description": "Car model",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 2
         },
         "pickup_location": {
           "description": "Place to pick up the car",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 3
         },
         "start_date": {
           "description": "The first date to start using the rental car",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 4
         },
         "pickup_time": {
           "description": "Time for the pick-up",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 5
         },
         "city": {
           "description": "City where you want to rent the car",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 6
         },
         "end_date": {
           "description": "The date to return the car",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 7
         },
         "price_per_day": {
           "description": "The cost for renting the car per day",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 8
         },
         "add_insurance": {
           "description": "Whether to purchase insurance",
           "is_categorical": true,
           "possible_values": [
-            "True",
-            "False"
-          ]
+            "9a: True",
+            "9b: False"
+          ],
+          "slot_ID": 9
         },
         "count": {
           "description": "the number of items found that satisfy the user's request.",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 10
         }
       },
       "active_intents": [
@@ -4645,70 +5044,81 @@
         "from": {
           "description": "Starting city for train journey",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 1
         },
         "to": {
           "description": "Ending city for train journey",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 2
         },
         "from_station": {
           "description": "Name of station at starting city",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 3
         },
         "to_station": {
           "description": "Name of station at ending city",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 4
         },
         "date_of_journey": {
           "description": "Date of train journey",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 5
         },
         "journey_start_time": {
           "description": "Time of start of train journey",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 6
         },
         "total": {
           "description": "Total price of train reservation",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 7
         },
         "number_of_adults": {
           "description": "Number of adults to reserve train tickets for",
           "is_categorical": true,
           "possible_values": [
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"
-          ]
+            "8a: 1",
+            "8b: 2",
+            "8c: 3",
+            "8d: 4",
+            "8e: 5"
+          ],
+          "slot_ID": 8
         },
         "class": {
           "description": "Fare class for train reservation",
           "is_categorical": true,
           "possible_values": [
-            "Value",
-            "Flexible",
-            "Business"
-          ]
+            "9a: Value",
+            "9b: Flexible",
+            "9c: Business"
+          ],
+          "slot_ID": 9
         },
         "trip_protection": {
           "description": "Whether to add trip protection to reservation, for a fee",
           "is_categorical": true,
           "possible_values": [
-            "True",
-            "False"
-          ]
+            "10a: True",
+            "10b: False"
+          ],
+          "slot_ID": 10
         },
         "count": {
           "description": "the number of items found that satisfy the user's request.",
           "is_categorical": false,
-          "possible_values": []
+          "possible_values": [],
+          "slot_ID": 11
         }
       },
       "active_intents": [
