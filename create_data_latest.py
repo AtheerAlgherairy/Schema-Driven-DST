@@ -46,7 +46,7 @@ def create_dstIDDesc_data(dataset, data_dir, args):
     #original SGD schema but with IDs
     #schema_path= "SGD/ontologyIDs.json"
     #ontology for multiwoz21
-    schema_path= "multiwoz21/ontologyIDs.json"
+    schema_path= "multiwoz/ontologyIDs.json"
     schema =json.load(open(schema_path))
     #schema=load_ontology(dataset)
 
