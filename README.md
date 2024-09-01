@@ -1,74 +1,127 @@
-# The effect of different schema-driven prompting for dialogue state tracking
+# The Effect of Different Schema-Driven Prompting for Dialogue State Tracking
 
-First, forke the following repo: 
-## Convlab-3  (Many thanks to all contributors)
-For more details on ConvLab-3, see [paper](https://aclanthology.org/2023.emnlp-demo.9/).
+To replicate the experiments from the paper "The Effect of Different Schema-Driven Prompting for Dialogue State Tracking," follow these steps:
 
-To duplicate the code in paper: The effect of different schema-driven prompting for dialogue state tracking, follow the steps:
-
-- [Create datasets for different scenarios](#create-datasets)
-- [T5 training for DST ](#t5-training)
-- [Evaluation ](#evaluation)
+- [Fork Convlab-3 and Add the Files](#fork-convlab-3-and-add-the-files)
+- [Create Datasets for Different Scenarios](#create-datasets-for-different-scenarios)
+- [T5 Training for DST](#t5-training-for-dst)
+- [Evaluation](#evaluation)
 - [Citing](#citing)
+- [Source](#source)
 
+## Fork Convlab-3 and Add the Files
 
+1. Fork the following repository: [Convlab-3](https://github.com/ConvLab/ConvLab-3) (Many thanks to all contributors).
+2. For more details on Convlab-3, refer to the [paper](https://aclanthology.org/2023.emnlp-demo.9/).
+3. After forking Convlab-3, add `create_data_latest.py` to the `convlab/base_models/t5` directory.
 
-## Create datasets for different scenarios
+## Create Datasets for Different Scenarios
 
-First, you need to fork the Convlab-3 and add "create_data_latest.py" under "convlab/base_models/t5"
+To prepare datasets for different scenarios in the Schema Guided Dialogue (SGD) dataset and the MultiWOZ dataset, use the following commands:
 
-Then, to prepare the different scenarios for the Schema Guided Dialogue (SGD) dataset and the MultiWOZ dataset, 
-
-
-Scenario 1: No prompting
-`
+**Scenario 1: No Prompting**
+```bash
 python create_data.py --tasks dst --datasets sgd --speaker user --context_window_size 50
-`
-
-`
 python create_data.py --tasks dst --datasets mwoz --speaker user --context_window_size 50
-`
+```
 
-Scenario 2: Prompting with slot names only
-`
-python create_data_latest.py --tasks dstName --datasets sgd --speaker user --context_window_size 50
-`
+**Scenario 2: Prompting with Slot Names Only**
+```bash
+python create_data_latest.py.py --tasks dstName --datasets sgd --speaker user --context_window_size 50
+python create_data_latest.py.py --tasks dstName --datasets mwoz --speaker user --context_window_size 50
+```
+**Scenario 3: Prompting with Slot Names and Descriptions**
+```bash
+python create_data_latest.py.py --tasks dstNameDesc --datasets sgd --speaker user --context_window_size 50
+python create_data_latest.py.py --tasks dstNameDesc --datasets mwoz --speaker user --context_window_size 50
+```
+**Scenario 4: Prompting with Slot IDs and Descriptions**
+```bash
+python create_data_latest.py.py --tasks dstIDDesc --datasets sgd --speaker user --context_window_size 50
+python create_data_latest.py.py --tasks dstIDDesc --datasets mwoz --speaker user --context_window_size 50
+```
+## T5 Training for DST
+1. Navigate to the convlab/base_models/t5 folder.
+3. Run run_seq2seq.py for training, specifying the URL of your dataset (train and validation files) and the name of model (model_name_or_path t5-small or t5-base):
 
-`
-python create_data_latest.py --tasks dstName --datasets mwoz --speaker user --context_window_size 50
-`
+```bash
+python run_seq2seq.py \
+    --task_name dst \
+    --train_file PATH_TO_YOUR_TRAIN_FILE \
+    --validation_file PATH_TO_YOUR_VALIDATION_FILE \
+    --source_column context \
+    --target_column state_seq \
+    --max_source_length 1024 \
+    --max_target_length 512 \
+    --truncation_side left \
+    --model_name_or_path t5-small \
+    --do_train \
+    --do_eval \
+    --save_strategy epoch \
+    --evaluation_strategy epoch \
+    --save_total_limit 1 \
+    --prediction_loss_only \
+    --cache_dir PATH_TO_YOUR_CACHE_DIR \
+    --output_dir PATH_TO_YOUR_OUTPUT_DIR \
+    --logging_dir PATH_TO_YOUR_LOGGING_DIR \
+    --overwrite_output_dir \
+    --preprocessing_num_workers 4 \
+    --per_device_train_batch_size 32 \
+    --per_device_eval_batch_size 32 \
+    --gradient_accumulation_steps 4 \
+    --learning_rate 1e-4 \
+    --num_train_epochs 10 \
+    --optim adafactor \
+    --gradient_checkpointing \
+    --early_stopping_patience 5 \
+    --load_best_model_at_end
 
-Scenario 3: Prompting with slot names and descriptions:
 
-
-`
-python create_data_latest.py --tasks dstNameDesc --datasets sgd --speaker user --context_window_size 50
-`
-
-`
-python create_data_latest.py --tasks dstNameDesc --datasets mwoz --speaker user --context_window_size 50
-`
-
-Scenario 4: Prompting with slot IDs and descriptions:
-`
-python create_data_latest.py --tasks dstIDDesc --datasets sgd --speaker user --context_window_size 50
-`
-
-`
-python create_data_latest.py --tasks dstIDDesc --datasets mwoz --speaker user --context_window_size 50
-`
-
-## T5 Training for DST 
-
-Go to `convlab/base_models/t5` folder and run "run_seq2seq.py" for each dataset, specify the URL of your dataset, the model (T5-base or T5-small):.
-
-`
-python run_seq2seq.py 
-`
-
+```
 ## Evaluation
 
+1. Navigate to the convlab/base_models/t5 folder.
+2. Run run_seq2seq.py for evaluation, specifying the URL of your dataset (test file) and the model output from the previous step:
+   
+```bash
+python run_seq2seq.py \
+    --task_name dst \
+    --test_file PATH_TO_YOUR_TEST_FILE \
+    --source_column context \
+    --target_column state_seq\
+    --max_source_length 1024 \
+    --max_target_length 512 \
+    --truncation_side left \
+    --model_name_or_path PATH_TO_YOUR_TRAINED_MODEL \
+    --do_predict \
+    --predict_with_generate \
+    --metric_name_or_path dst_metric.py \
+    --cache_dir ..\cache \
+    --output_dir PATH_TO_YOUR_OUTPUT_DIR \
+    --logging_dir PATH_TO_YOUR_LOGGING_DIR \
+    --overwrite_output_dir \
+    --preprocessing_num_workers 4 \
+    --per_device_train_batch_size 32 \
+    --per_device_eval_batch_size 32 \
+    --gradient_accumulation_steps 4 \
+    --learning_rate 1e-4 \
+    --num_train_epochs 10 \
+    --optim adafactor \
+    --gradient_checkpointing
 
 
+```
 
+3. After evaluation, a *generated_predictions.json* will be generated in the output folder, use its path for PATH_TO_GENERATED_PREDICTIONS_JSON_FILE
+4. Navigate to the convlab/base_models/t5/dst folder.
+5. Run merge_predict_res.py a *predictions.json* will be generated in the output folder, use its path for PATH_TO_PREDICTIONS_JSON_FILE
+7. Run evaluate_unified_datasets.py
+   
+```bash
+python merge_predict_res.py -d multiwoz21 -s user -c 50 -p PATH_TO_GENERATED_PREDICTIONS_JSON_FILE
+
+python evaluate_unified_datasets.py -p PATH_TO_PREDICTIONS_JSON_FILE
+
+```
 ## Citing
+
