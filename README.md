@@ -31,21 +31,21 @@ python create_data.py --tasks dst --datasets mwoz --speaker user --context_windo
 
 **Scenario 2: Prompting with Slot Names Only**
 ```bash
-python create_data_latest.py.py --tasks dstName --datasets sgd --speaker user --context_window_size 50
-python create_data_latest.py.py --tasks dstName --datasets mwoz --speaker user --context_window_size 50
+python create_data_schema.py --tasks dstName --datasets sgd --speaker user --context_window_size 50
+python create_data_schema.py --tasks dstName --datasets mwoz --speaker user --context_window_size 50
 ```
 **Scenario 3: Prompting with Slot Names and Descriptions**
 ```bash
-python create_data_latest.py.py --tasks dstNameDesc --datasets sgd --speaker user --context_window_size 50
-python create_data_latest.py.py --tasks dstNameDesc --datasets mwoz --speaker user --context_window_size 50
+python create_data_schema.py --tasks dstNameDesc --datasets sgd --speaker user --context_window_size 50
+python create_data_schema.py --tasks dstNameDesc --datasets mwoz --speaker user --context_window_size 50
 ```
 **Scenario 4: Prompting with Slot IDs and Descriptions**
 
 Adjust the URL for ontologyIDs.json (available in this repository for the SGD and MultiWOZ datasets).
 
 ```bash
-python create_data_latest.py.py --tasks dstIDDesc --datasets sgd --speaker user --context_window_size 50
-python create_data_latest.py.py --tasks dstIDDesc --datasets mwoz --speaker user --context_window_size 50
+python create_data_schema.py --tasks dstIDDesc --datasets sgd --speaker user --context_window_size 50
+python create_data_schema.py --tasks dstIDDesc --datasets mwoz --speaker user --context_window_size 50
 ```
 ## T5 Training for DST
 1. Navigate to the convlab/base_models/t5 folder.
